@@ -259,6 +259,7 @@ footer{
     <select id="biomeFilter"><option value="">All Biomes</option></select>
     <select id="penisFilter"><option value="">All Sizes</option></select>
     <select id="bodyFilter"><option value="">All Body Types</option></select>
+    <select id="continentFilter"><option value="">All Continents</option></select>
     <button class="clear-btn ui" id="clearBtn">Clear</button>
     <span class="count ui" id="resultCount"></span>
   </div>
@@ -320,7 +321,11 @@ const TRIBES = [
     "woman_height": "5'9\"–6'0\"",
     "glow_color": "#e8823a",
     "biome_category": "Desert",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "The Cradle Basin",
+    "region": "The Open Waste",
+    "population_region_text": "The Tribe of Solar Flame numbers roughly 240 people, settled in The Open Waste, The Cradle Basin."
   },
   {
     "number": 2,
@@ -355,7 +360,11 @@ const TRIBES = [
     "woman_height": "4'8\"–5'2\"",
     "glow_color": "#e097c4",
     "biome_category": "Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Verdant Spirits numbers roughly 280 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 3,
@@ -390,7 +399,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'6\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Coastal",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "The Long Shore",
+    "region": "The Shoreline",
+    "population_region_text": "The Tribe of Crystal Waters numbers roughly 300 people, settled in The Shoreline, The Long Shore."
   },
   {
     "number": 4,
@@ -425,7 +438,11 @@ const TRIBES = [
     "woman_height": "6'0\"–6'3\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Mountain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Iron Will numbers roughly 240 people, settled in The Spine, Highgreen."
   },
   {
     "number": 5,
@@ -460,7 +477,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'6\"",
     "glow_color": "#e8b23a",
     "biome_category": "Savannah",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 300,
+    "continent": "The Dryheart",
+    "region": "The Savannah Belt",
+    "population_region_text": "The Tribe of Velvet Skies numbers roughly 300 people, settled in The Savannah Belt, The Dryheart."
   },
   {
     "number": 6,
@@ -495,7 +516,11 @@ const TRIBES = [
     "woman_height": "4'5\"–4'8\"",
     "glow_color": "#c2593b",
     "biome_category": "Forest",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 300,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Midnight Song numbers roughly 300 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 7,
@@ -530,7 +555,11 @@ const TRIBES = [
     "woman_height": "5'6\"–5'8\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Volcanic",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 260,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Ember's Edge numbers roughly 260 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 8,
@@ -565,7 +594,11 @@ const TRIBES = [
     "woman_height": "5'10\"–6'1\"",
     "glow_color": "#d97757",
     "biome_category": "Arctic",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "The Frostcrown",
+    "region": "The Fjordreach",
+    "population_region_text": "The Tribe of Frosted Peaks numbers roughly 240 people, settled in The Fjordreach, The Frostcrown."
   },
   {
     "number": 9,
@@ -600,7 +633,11 @@ const TRIBES = [
     "woman_height": "5'0\"–5'2\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Mixed Forest",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 280,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Blood Moon numbers roughly 280 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 10,
@@ -635,7 +672,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'6\"",
     "glow_color": "#f0c419",
     "biome_category": "Island",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Thousand Isles",
+    "population_region_text": "The Tribe of Obsidian Shores numbers roughly 260 people, settled in The Thousand Isles, the Island Systems."
   },
   {
     "number": 11,
@@ -670,7 +711,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'6\"",
     "glow_color": "#c9922a",
     "biome_category": "Tropical",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 360,
+    "continent": "The Dryheart",
+    "region": "The Tropic Coast",
+    "population_region_text": "The Tribe of Golden Orchids numbers roughly 360 people, settled in The Tropic Coast, The Dryheart."
   },
   {
     "number": 12,
@@ -705,7 +750,11 @@ const TRIBES = [
     "woman_height": "5'5\"–5'7\"",
     "glow_color": "#7bc47f",
     "biome_category": "Savannah",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 300,
+    "continent": "The Dryheart",
+    "region": "The Savannah Belt",
+    "population_region_text": "The Tribe of Scarlet Storms numbers roughly 300 people, settled in The Savannah Belt, The Dryheart."
   },
   {
     "number": 13,
@@ -740,7 +789,11 @@ const TRIBES = [
     "woman_height": "5'6\"–5'9\"",
     "glow_color": "#e05c8a",
     "biome_category": "Cold Mountain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Frostcrown",
+    "region": "The Frostback Range",
+    "population_region_text": "The Tribe of Frostfire Peaks numbers roughly 200 people, settled in The Frostback Range, The Frostcrown."
   },
   {
     "number": 14,
@@ -775,7 +828,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'7\"",
     "glow_color": "#9b7edc",
     "biome_category": "Mountain Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 240,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Thunderous Valleys numbers roughly 240 people, settled in The Spine, Highgreen."
   },
   {
     "number": 15,
@@ -810,7 +867,11 @@ const TRIBES = [
     "woman_height": "4'7\"–5'0\"",
     "glow_color": "#e8823a",
     "biome_category": "Forest",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Pearl Blossoms numbers roughly 260 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 16,
@@ -845,7 +906,11 @@ const TRIBES = [
     "woman_height": "5'11\"–6'2\"",
     "glow_color": "#e097c4",
     "biome_category": "Mountain",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Silver Veins numbers roughly 280 people, settled in The Spine, Highgreen."
   },
   {
     "number": 17,
@@ -880,7 +945,11 @@ const TRIBES = [
     "woman_height": "5'2\"–5'6\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Tropical",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 380,
+    "continent": "The Dryheart",
+    "region": "The Tropic Coast",
+    "population_region_text": "The Tribe of Full Moon Blessing numbers roughly 380 people, settled in The Tropic Coast, The Dryheart."
   },
   {
     "number": 18,
@@ -915,7 +984,11 @@ const TRIBES = [
     "woman_height": "5'2\"–5'5\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Mountain",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 300,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Majestic Hills numbers roughly 300 people, settled in The Spine, Highgreen."
   },
   {
     "number": 19,
@@ -950,7 +1023,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'8\"",
     "glow_color": "#e8b23a",
     "biome_category": "Desert",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 240,
+    "continent": "The Cradle Basin",
+    "region": "The Open Waste",
+    "population_region_text": "The Tribe of Golden Rain numbers roughly 240 people, settled in The Open Waste, The Cradle Basin."
   },
   {
     "number": 20,
@@ -985,7 +1062,11 @@ const TRIBES = [
     "woman_height": "5'3\"–5'7\"",
     "glow_color": "#c2593b",
     "biome_category": "Plains",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 360,
+    "continent": "Highgreen",
+    "region": "The Open Plains",
+    "population_region_text": "The Tribe of Ruby Sands numbers roughly 360 people, settled in The Open Plains, Highgreen."
   },
   {
     "number": 21,
@@ -1020,7 +1101,11 @@ const TRIBES = [
     "woman_height": "6'6\"–6'10\"",
     "glow_color": "#9ac9e0",
     "biome_category": "High Mountain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Mountain Peaks numbers roughly 200 people, settled in The Spine, Highgreen."
   },
   {
     "number": 22,
@@ -1055,7 +1140,11 @@ const TRIBES = [
     "woman_height": "5'3\"–5'7\"",
     "glow_color": "#d97757",
     "biome_category": "Forest",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Chubby Blossoms numbers roughly 260 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 23,
@@ -1090,12 +1179,16 @@ const TRIBES = [
     "woman_height": "5'11\"–6'3\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Desert",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 220,
+    "continent": "The Cradle Basin",
+    "region": "The Open Waste",
+    "population_region_text": "The Tribe of Amber Dunes numbers roughly 220 people, settled in The Open Waste, The Cradle Basin."
   },
   {
     "number": 24,
     "name": "Dainty Whispers",
-    "biome": "Small Forest/River Tribe",
+    "biome": "Forest/River Tribe",
     "birth_medium": "A small, clear rivulet threading through the forest floor.",
     "the_futa": "4'8\"–5'0\". A delicate, small face, soft eyes, small lips. Petite and slight throughout — narrow hips, small pert breasts, a slim, delicate frame. Small hands, small feet. Her cock is small, pale, neat; her hole is tiny, pale, tight. Penis: **Small** (7.5–9\").",
     "the_woman": "4'3\"–4'6\". Even smaller than her futa, fine-boned and delicate. Small breasts, narrow hips, a small delicate frame. Her hole is tiny, pale, tight.",
@@ -1124,8 +1217,12 @@ const TRIBES = [
     "futa_height": "4'8\"–5'0\"",
     "woman_height": "4'3\"–4'6\"",
     "glow_color": "#f0c419",
-    "biome_category": "Small Forest",
-    "body_category": "Slim"
+    "biome_category": "Forest",
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Dainty Whispers numbers roughly 220 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 25,
@@ -1160,7 +1257,11 @@ const TRIBES = [
     "woman_height": "5'5\"–5'8\"",
     "glow_color": "#c9922a",
     "biome_category": "Coastal",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 280,
+    "continent": "The Long Shore",
+    "region": "The Shoreline",
+    "population_region_text": "The Tribe of Velvet Waves numbers roughly 280 people, settled in The Shoreline, The Long Shore."
   },
   {
     "number": 26,
@@ -1195,7 +1296,11 @@ const TRIBES = [
     "woman_height": "4'8\"–5'0\"",
     "glow_color": "#7bc47f",
     "biome_category": "Windswept Peak",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Soft Winds numbers roughly 260 people, settled in The Spine, Highgreen."
   },
   {
     "number": 27,
@@ -1230,7 +1335,11 @@ const TRIBES = [
     "woman_height": "5'9\"–6'0\"",
     "glow_color": "#e05c8a",
     "biome_category": "High Mountain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Majestic Peaks numbers roughly 220 people, settled in The Spine, Highgreen."
   },
   {
     "number": 28,
@@ -1265,7 +1374,11 @@ const TRIBES = [
     "woman_height": "5'2\"–5'5\"",
     "glow_color": "#9b7edc",
     "biome_category": "Coastal Cliffs",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 280,
+    "continent": "The Long Shore",
+    "region": "The Shoreline",
+    "population_region_text": "The Tribe of Ruby Tides numbers roughly 280 people, settled in The Shoreline, The Long Shore."
   },
   {
     "number": 29,
@@ -1300,7 +1413,11 @@ const TRIBES = [
     "woman_height": "6'0\"–6'3\"",
     "glow_color": "#e8823a",
     "biome_category": "Tropical Beach",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 280,
+    "continent": "The Dryheart",
+    "region": "The Tropic Coast",
+    "population_region_text": "The Tribe of Gentle Tides numbers roughly 280 people, settled in The Tropic Coast, The Dryheart."
   },
   {
     "number": 30,
@@ -1335,7 +1452,11 @@ const TRIBES = [
     "woman_height": "4'6\"–4'9\"",
     "glow_color": "#e097c4",
     "biome_category": "Volcanic Island",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 260,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Tiny Flames numbers roughly 260 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 31,
@@ -1370,7 +1491,11 @@ const TRIBES = [
     "woman_height": "5'5\"–5'8\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Fertile Valley",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 380,
+    "continent": "The Cradle Basin",
+    "region": "The Ringed Valley",
+    "population_region_text": "The Tribe of Earth's Heart numbers roughly 380 people, settled in The Ringed Valley, The Cradle Basin."
   },
   {
     "number": 32,
@@ -1405,7 +1530,11 @@ const TRIBES = [
     "woman_height": "5'3\"–5'6\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Forest Meadow",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 360,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Soft Blossoms numbers roughly 360 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 33,
@@ -1440,7 +1569,11 @@ const TRIBES = [
     "woman_height": "6'2\"–6'6\"",
     "glow_color": "#e8b23a",
     "biome_category": "Rocky Cliffs",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "The Long Shore",
+    "region": "The Shoreline",
+    "population_region_text": "The Tribe of Rising Stones numbers roughly 240 people, settled in The Shoreline, The Long Shore."
   },
   {
     "number": 34,
@@ -1475,7 +1608,11 @@ const TRIBES = [
     "woman_height": "6'2\"–6'5\"",
     "glow_color": "#c2593b",
     "biome_category": "Open Plains",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 340,
+    "continent": "Highgreen",
+    "region": "The Open Plains",
+    "population_region_text": "The Tribe of Gentle Giants numbers roughly 340 people, settled in The Open Plains, Highgreen."
   },
   {
     "number": 35,
@@ -1510,7 +1647,11 @@ const TRIBES = [
     "woman_height": "4'4\"–4'7\"",
     "glow_color": "#9ac9e0",
     "biome_category": "River Valley",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The River Country",
+    "population_region_text": "The Tribe of Tiny Rivers numbers roughly 260 people, settled in The River Country, Highgreen."
   },
   {
     "number": 36,
@@ -1545,7 +1686,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'7\"",
     "glow_color": "#d97757",
     "biome_category": "Arid Plain",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 220,
+    "continent": "The Cradle Basin",
+    "region": "The Open Waste",
+    "population_region_text": "The Tribe of Dark Suns numbers roughly 220 people, settled in The Open Waste, The Cradle Basin."
   },
   {
     "number": 37,
@@ -1580,7 +1725,11 @@ const TRIBES = [
     "woman_height": "4'8\"–5'0\"",
     "glow_color": "#6fa8dc",
     "biome_category": "High Mountain",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Silver Wings numbers roughly 220 people, settled in The Spine, Highgreen."
   },
   {
     "number": 38,
@@ -1615,7 +1764,11 @@ const TRIBES = [
     "woman_height": "5'8\"–6'0\"",
     "glow_color": "#f0c419",
     "biome_category": "Plains",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 360,
+    "continent": "Highgreen",
+    "region": "The Open Plains",
+    "population_region_text": "The Tribe of Sunset Skies numbers roughly 360 people, settled in The Open Plains, Highgreen."
   },
   {
     "number": 39,
@@ -1650,7 +1803,11 @@ const TRIBES = [
     "woman_height": "4'9\"–5'1\"",
     "glow_color": "#c9922a",
     "biome_category": "Forest",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Whispering Leaves numbers roughly 260 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 40,
@@ -1685,7 +1842,11 @@ const TRIBES = [
     "woman_height": "5'8\"–6'0\"",
     "glow_color": "#7bc47f",
     "biome_category": "Volcanic",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Crimson Embers numbers roughly 260 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 41,
@@ -1720,7 +1881,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'8\"",
     "glow_color": "#e05c8a",
     "biome_category": "Coastal",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "The Long Shore",
+    "region": "The Shoreline",
+    "population_region_text": "The Tribe of Sapphire Waters numbers roughly 260 people, settled in The Shoreline, The Long Shore."
   },
   {
     "number": 42,
@@ -1755,7 +1920,11 @@ const TRIBES = [
     "woman_height": "5'8\"–6'0\"",
     "glow_color": "#9b7edc",
     "biome_category": "Cold Mountain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Frostcrown",
+    "region": "The Frostback Range",
+    "population_region_text": "The Tribe of Frozen Winds numbers roughly 200 people, settled in The Frostback Range, The Frostcrown."
   },
   {
     "number": 43,
@@ -1790,7 +1959,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'8\"",
     "glow_color": "#e8823a",
     "biome_category": "Plains",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 340,
+    "continent": "Highgreen",
+    "region": "The Open Plains",
+    "population_region_text": "The Tribe of Earthly Harmony numbers roughly 340 people, settled in The Open Plains, Highgreen."
   },
   {
     "number": 44,
@@ -1825,7 +1998,11 @@ const TRIBES = [
     "woman_height": "6'0\"–6'3\"",
     "glow_color": "#e097c4",
     "biome_category": "Storm Mountain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Dryheart",
+    "region": "The Storm Peaks",
+    "population_region_text": "The Tribe of Stormcrown Peaks numbers roughly 200 people, settled in The Storm Peaks, The Dryheart."
   },
   {
     "number": 45,
@@ -1860,7 +2037,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'7\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Blossom Mist numbers roughly 300 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 46,
@@ -1895,7 +2076,11 @@ const TRIBES = [
     "woman_height": "5'6\"–5'9\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Coastal Island",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 260,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "Coastal Scatter",
+    "population_region_text": "The Tribe of Twilight Shores numbers roughly 260 people, settled in Coastal Scatter, the Island Systems."
   },
   {
     "number": 47,
@@ -1930,7 +2115,11 @@ const TRIBES = [
     "woman_height": "5'9\"–6'0\"",
     "glow_color": "#e8b23a",
     "biome_category": "Mountain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Ruby Peaks numbers roughly 240 people, settled in The Spine, Highgreen."
   },
   {
     "number": 48,
@@ -1965,7 +2154,11 @@ const TRIBES = [
     "woman_height": "5'7\"–5'10\"",
     "glow_color": "#c2593b",
     "biome_category": "Desert",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 220,
+    "continent": "The Cradle Basin",
+    "region": "The Open Waste",
+    "population_region_text": "The Tribe of Scarlet Sun numbers roughly 220 people, settled in The Open Waste, The Cradle Basin."
   },
   {
     "number": 49,
@@ -2000,7 +2193,11 @@ const TRIBES = [
     "woman_height": "4'6\"–4'9\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Silent Shadows numbers roughly 220 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 50,
@@ -2035,7 +2232,11 @@ const TRIBES = [
     "woman_height": "5'5\"–5'9\"",
     "glow_color": "#d97757",
     "biome_category": "Desert",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "The Cradle Basin",
+    "region": "The Open Waste",
+    "population_region_text": "The Tribe of Golden Sands numbers roughly 260 people, settled in The Open Waste, The Cradle Basin."
   },
   {
     "number": 51,
@@ -2070,7 +2271,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'8\"",
     "glow_color": "#6fa8dc",
     "biome_category": "River",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 320,
+    "continent": "Highgreen",
+    "region": "The River Country",
+    "population_region_text": "The Tribe of Starlit Rivers numbers roughly 320 people, settled in The River Country, Highgreen."
   },
   {
     "number": 52,
@@ -2105,12 +2310,16 @@ const TRIBES = [
     "woman_height": "6'0\"–6'3\"",
     "glow_color": "#f0c419",
     "biome_category": "Cold Mountain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Frostcrown",
+    "region": "The Frostback Range",
+    "population_region_text": "The Tribe of Frosted Stones numbers roughly 200 people, settled in The Frostback Range, The Frostcrown."
   },
   {
     "number": 53,
     "name": "Golden Blossoms",
-    "biome": "Short Forest Tribe",
+    "biome": "Forest Tribe",
     "birth_medium": "A warm spring tucked into a tropical forest grove.",
     "the_futa": "4'8\"–5'3\". A soft, sweet face, full lips, bright eyes. Curvy — large full breasts, a narrow waist, wide hips. Soft hands, soft feet. Her cock is small, golden brown; her hole is small, golden brown. Penis: **Small** (8–9.5\").",
     "the_woman": "4'4\"–4'8\". Small and curvy, bright sweet eyes. Large breasts, narrow waist, wide hips. Her hole is small, golden brown.",
@@ -2139,13 +2348,17 @@ const TRIBES = [
     "futa_height": "4'8\"–5'3\"",
     "woman_height": "4'4\"–4'8\"",
     "glow_color": "#c9922a",
-    "biome_category": "Short Forest",
-    "body_category": "Curvy"
+    "biome_category": "Forest",
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Golden Blossoms numbers roughly 260 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 54,
     "name": "Sapphire Stones",
-    "biome": "Tall Mountain Tribe",
+    "biome": "Mountain Tribe",
     "birth_medium": "A spring at the very edge of a high, sheer mountain peak.",
     "the_futa": "6'4\"–7'0\". A sharp, striking face, high cheekbones, piercing pale blue eyes. Slim and muscular — long legs, small breasts, a narrow waist. A flat toned stomach. Long capable hands, long feet. Her cock is small, pale blue-toned; her hole is small, pale blue. Penis: **Small** (8–9.5\").",
     "the_woman": "5'11\"–6'3\". Built slim and tall along similar lines, sharp piercing features. Small breasts, long legs, narrow hips. Her hole is small, pale blue.",
@@ -2174,8 +2387,12 @@ const TRIBES = [
     "futa_height": "6'4\"–7'0\"",
     "woman_height": "5'11\"–6'3\"",
     "glow_color": "#7bc47f",
-    "biome_category": "Tall Mountain",
-    "body_category": "Muscular"
+    "biome_category": "Mountain",
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Sapphire Stones numbers roughly 240 people, settled in The Spine, Highgreen."
   },
   {
     "number": 55,
@@ -2210,12 +2427,16 @@ const TRIBES = [
     "woman_height": "5'1\"–5'6\"",
     "glow_color": "#e05c8a",
     "biome_category": "Volcanic Fat",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 300,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Crimson Flames numbers roughly 300 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 56,
     "name": "Silver Trees",
-    "biome": "Tall Forest Tribe",
+    "biome": "Forest Tribe",
     "birth_medium": "A spring in a grove of pale, silver-barked trees.",
     "the_futa": "6'0\"–6'5\". A calm, elegant face, pale eyes, soft features. Slim — small breasts, long legs, narrow hips. A flat stomach. Long elegant hands, long feet. Her cock is average length, pale silver-toned; her hole is small, pale. Penis: **Average** (10–11\").",
     "the_woman": "5'7\"–5'11\". Built slim and tall along similar lines, calm pale eyes. Small breasts, long legs, narrow hips. Her hole is small, pale.",
@@ -2244,13 +2465,17 @@ const TRIBES = [
     "futa_height": "6'0\"–6'5\"",
     "woman_height": "5'7\"–5'11\"",
     "glow_color": "#9b7edc",
-    "biome_category": "Tall Forest",
-    "body_category": "Slim"
+    "biome_category": "Forest",
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Silver Trees numbers roughly 260 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 57,
     "name": "River Blossoms",
-    "biome": "Short Riverbank Tribe",
+    "biome": "Riverbank Tribe",
     "birth_medium": "A pool tucked among flowering vines right at the riverbank.",
     "the_futa": "4'8\"–5'3\". A soft, round face, full lips, bright eyes. Curvy — wide hips, thick thighs, small breasts. Soft hands, soft feet. Her cock is small, light brown with green tint; her hole is small, light brown. Penis: **Small** (8–9\").",
     "the_woman": "4'4\"–4'8\". Small and curvy, bright round-cheeked features. Small breasts, wide hips, thick thighs. Her hole is small, light brown.",
@@ -2279,13 +2504,17 @@ const TRIBES = [
     "futa_height": "4'8\"–5'3\"",
     "woman_height": "4'4\"–4'8\"",
     "glow_color": "#e8823a",
-    "biome_category": "Short Riverbank",
-    "body_category": "Curvy"
+    "biome_category": "Riverbank",
+    "body_category": "Curvy",
+    "population": 300,
+    "continent": "The Silt Kingdom",
+    "region": "The Delta Lowlands",
+    "population_region_text": "The Tribe of River Blossoms numbers roughly 300 people, settled in The Delta Lowlands, The Silt Kingdom."
   },
   {
     "number": 58,
     "name": "Emerald Storms",
-    "biome": "Short Tropical Tribe",
+    "biome": "Tropical Tribe",
     "birth_medium": "A jungle pool fed by storm rains, rumbling thunder often in the distance.",
     "the_futa": "5'0\"–5'4\". A soft, warm face, full lips, bright eyes. Fat — large butt, full belly, thick thighs. Strong soft hands, soft feet. Her cock is thick, dark brown with green undertones; her hole is small, dark brown. Penis: **Large** (11–12.5\").",
     "the_woman": "4'8\"–5'1\". Built soft and full along similar lines, bright warm eyes. Large butt, thick thighs, a full belly. Her hole is small, dark brown.",
@@ -2314,13 +2543,17 @@ const TRIBES = [
     "futa_height": "5'0\"–5'4\"",
     "woman_height": "4'8\"–5'1\"",
     "glow_color": "#e097c4",
-    "biome_category": "Short Tropical",
-    "body_category": "Chubby/Soft"
+    "biome_category": "Tropical",
+    "body_category": "Chubby/Soft",
+    "population": 240,
+    "continent": "The Dryheart",
+    "region": "The Tropic Coast",
+    "population_region_text": "The Tribe of Emerald Storms numbers roughly 240 people, settled in The Tropic Coast, The Dryheart."
   },
   {
     "number": 59,
     "name": "Obsidian Shadows",
-    "biome": "Tall Volcanic Tribe",
+    "biome": "Volcanic Tribe",
     "birth_medium": "A pool set into smooth black obsidian rock near dormant lava flows.",
     "the_futa": "6'2\"–6'8\". A sharp, powerful face, piercing eyes, full lips. Tall and curvy — an enormous, jiggly ass, wide hips, small breasts. Strong hands, long feet. Her cock is average length, deep black with a hint of purple; her hole is small, deep black. Penis: **Average** (10.5–12\").",
     "the_woman": "5'9\"–6'2\". Built tall and curvy along similar lines, sharp piercing features. Small breasts, an enormous, jiggly ass, wide hips. Her hole is small, deep black.",
@@ -2349,13 +2582,17 @@ const TRIBES = [
     "futa_height": "6'2\"–6'8\"",
     "woman_height": "5'9\"–6'2\"",
     "glow_color": "#4fb8c9",
-    "biome_category": "Tall Volcanic",
-    "body_category": "Muscular"
+    "biome_category": "Volcanic",
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Obsidian Shadows numbers roughly 240 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 60,
     "name": "Dainty Flowers",
-    "biome": "Short Meadow Tribe",
+    "biome": "Meadow Tribe",
     "birth_medium": "A small spring at the center of a flower-filled meadow.",
     "the_futa": "4'7\"–5'2\". A small, delicate face, soft eyes, gentle smile. Slim — small breasts, narrow hips, a delicate frame. Small hands, small feet. Her cock is small, pale with a pinkish tint; her hole is tiny, pale-pink. Penis: **Small** (7.5–9\").",
     "the_woman": "4'3\"–4'7\". Even smaller, delicate throughout. Small breasts, narrow hips. Her hole is tiny, pale-pink.",
@@ -2384,8 +2621,12 @@ const TRIBES = [
     "futa_height": "4'7\"–5'2\"",
     "woman_height": "4'3\"–4'7\"",
     "glow_color": "#8a8f9c",
-    "biome_category": "Short Meadow",
-    "body_category": "Slim"
+    "biome_category": "Meadow",
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "The Long Shore",
+    "region": "The Bloomfields",
+    "population_region_text": "The Tribe of Dainty Flowers numbers roughly 260 people, settled in The Bloomfields, The Long Shore."
   },
   {
     "number": 61,
@@ -2420,12 +2661,16 @@ const TRIBES = [
     "woman_height": "5'4\"–5'8\"",
     "glow_color": "#e8b23a",
     "biome_category": "Coastal Fat",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 240,
+    "continent": "The Long Shore",
+    "region": "The Shoreline",
+    "population_region_text": "The Tribe of Stormy Seas numbers roughly 240 people, settled in The Shoreline, The Long Shore."
   },
   {
     "number": 62,
     "name": "Stormcrag Hollow",
-    "biome": "Short Storm Mountain Tribe",
+    "biome": "Storm Mountain Tribe",
     "birth_medium": "A spring carved into a sheltered mountain hollow, protected from the worst of the storms above.",
     "the_futa": "5'2\"–5'5\". A strong, compact face, sharp eyes, a determined set to her jaw. Muscular — strong arms, thick thighs, small breasts. Strong hands, sure feet. Her cock is average length, pale with gray undertones; her hole is small, pale-gray. Penis: **Average** (9.5–11\").",
     "the_woman": "4'9\"–5'1\". Built muscular and compact along similar lines, sharp determined eyes. Small breasts, strong arms, thick thighs. Her hole is small, pale-gray.",
@@ -2454,13 +2699,17 @@ const TRIBES = [
     "futa_height": "5'2\"–5'5\"",
     "woman_height": "4'9\"–5'1\"",
     "glow_color": "#c2593b",
-    "biome_category": "Short Storm Mountain",
-    "body_category": "Muscular"
+    "biome_category": "Storm Mountain",
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Dryheart",
+    "region": "The Storm Peaks",
+    "population_region_text": "The Tribe of Stormcrag Hollow numbers roughly 200 people, settled in The Storm Peaks, The Dryheart."
   },
   {
     "number": 63,
     "name": "Scarlet Winds",
-    "biome": "Short Desert Tribe",
+    "biome": "Desert Tribe",
     "birth_medium": "A vessel filled during a rare, strong desert windstorm, believed to carry extra vitality.",
     "the_futa": "4'10\"–5'3\". A bold, sun-warmed face, full lips, sharp eyes. Curvy — an enormous, jiggly ass, thick thighs, small breasts. Strong hands, wind-toughened feet. Her cock is small, reddish-brown; her hole is small, reddish-brown. Penis: **Small** (8–9.5\").",
     "the_woman": "4'6\"–4'10\". Built curvy and small along similar lines, sharp bold eyes. Small breasts, an enormous, jiggly ass, thick thighs. Her hole is small, reddish-brown.",
@@ -2489,13 +2738,17 @@ const TRIBES = [
     "futa_height": "4'10\"–5'3\"",
     "woman_height": "4'6\"–4'10\"",
     "glow_color": "#9ac9e0",
-    "biome_category": "Short Desert",
-    "body_category": "Curvy"
+    "biome_category": "Desert",
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "The Cradle Basin",
+    "region": "The Open Waste",
+    "population_region_text": "The Tribe of Scarlet Winds numbers roughly 260 people, settled in The Open Waste, The Cradle Basin."
   },
   {
     "number": 64,
     "name": "Frosted Embers",
-    "biome": "Tall Arctic Fat Tribe",
+    "biome": "Arctic Fat Tribe",
     "birth_medium": "A spring kept warm by embers carefully tended nearby, set against the frozen tundra.",
     "the_futa": "6'5\"+. A strong, warm face, full lips, sharp eyes. Fat — large full breasts, thick thighs, full bellies. Strong hands, wide feet. Her cock is thick and long, pale with reddish veins; her hole is tight, pale-red. Penis: **Large** (12.5–13.5\").",
     "the_woman": "6'0\"–6'3\". Built large and full along similar lines, sharp warm features. Large breasts, thick thighs, a full belly. Her hole is tight, pale-red.",
@@ -2524,8 +2777,12 @@ const TRIBES = [
     "futa_height": "6'5\"+",
     "woman_height": "6'0\"–6'3\"",
     "glow_color": "#d97757",
-    "biome_category": "Tall Arctic Fat",
-    "body_category": "Chubby/Soft"
+    "biome_category": "Arctic Fat",
+    "body_category": "Chubby/Soft",
+    "population": 240,
+    "continent": "The Frostcrown",
+    "region": "The Fjordreach",
+    "population_region_text": "The Tribe of Frosted Embers numbers roughly 240 people, settled in The Fjordreach, The Frostcrown."
   },
   {
     "number": 65,
@@ -2560,12 +2817,16 @@ const TRIBES = [
     "woman_height": "5'4\"–5'8\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Mountain Slim",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Spine",
+    "population_region_text": "The Tribe of Crystal Stars numbers roughly 260 people, settled in The Spine, Highgreen."
   },
   {
     "number": 66,
     "name": "Sunlit Trees",
-    "biome": "Short Forest Tribe",
+    "biome": "Forest Tribe",
     "birth_medium": "A small pool in a forest clearing where sunlight breaks fully through the canopy.",
     "the_futa": "4'9\"–5'2\". A soft, warm face, full lips, bright eyes. Curvy — an enormous, jiggly ass, wide hips, small breasts. Soft hands, soft feet. Her cock is average length, golden brown; her hole is small, golden brown. Penis: **Average** (9.5–11\").",
     "the_woman": "4'5\"–4'9\". Small and curvy, bright warm eyes. Small breasts, an enormous, jiggly ass, wide hips. Her hole is small, golden brown.",
@@ -2594,8 +2855,12 @@ const TRIBES = [
     "futa_height": "4'9\"–5'2\"",
     "woman_height": "4'5\"–4'9\"",
     "glow_color": "#f0c419",
-    "biome_category": "Short Forest",
-    "body_category": "Curvy"
+    "biome_category": "Forest",
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Green Belt",
+    "population_region_text": "The Tribe of Sunlit Trees numbers roughly 260 people, settled in The Green Belt, Highgreen."
   },
   {
     "number": 67,
@@ -2630,7 +2895,11 @@ const TRIBES = [
     "woman_height": "5'4\"–5'8\"",
     "glow_color": "#c9922a",
     "biome_category": "Volcanic",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Golden Flame numbers roughly 260 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 68,
@@ -2665,7 +2934,11 @@ const TRIBES = [
     "woman_height": "5'1\"–5'6\"",
     "glow_color": "#7bc47f",
     "biome_category": "River Slim",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 320,
+    "continent": "Highgreen",
+    "region": "The River Country",
+    "population_region_text": "The Tribe of Crystal Rivers numbers roughly 320 people, settled in The River Country, Highgreen."
   },
   {
     "number": 69,
@@ -2700,7 +2973,11 @@ const TRIBES = [
     "woman_height": "5'6\"–5'10\"",
     "glow_color": "#e05c8a",
     "biome_category": "Coastal Fat",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 260,
+    "continent": "The Long Shore",
+    "region": "The Shoreline",
+    "population_region_text": "The Tribe of Moonlit Shores numbers roughly 260 people, settled in The Shoreline, The Long Shore."
   },
   {
     "number": 70,
@@ -2735,7 +3012,11 @@ const TRIBES = [
     "woman_height": "4'9\"-5'1\"",
     "glow_color": "#e8823a",
     "biome_category": "Swamp",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 320,
+    "continent": "The Silt Kingdom",
+    "region": "The Great Swamp",
+    "population_region_text": "The Tribe of Glowmire numbers roughly 320 people, settled in The Great Swamp, The Silt Kingdom."
   },
   {
     "number": 71,
@@ -2770,7 +3051,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#e097c4",
     "biome_category": "Swamp",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 340,
+    "continent": "The Silt Kingdom",
+    "region": "The Great Swamp",
+    "population_region_text": "The Tribe of Reedwatch numbers roughly 340 people, settled in The Great Swamp, The Silt Kingdom."
   },
   {
     "number": 72,
@@ -2805,7 +3090,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Swamp",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 300,
+    "continent": "The Silt Kingdom",
+    "region": "The Great Swamp",
+    "population_region_text": "The Tribe of Mudseal numbers roughly 300 people, settled in The Great Swamp, The Silt Kingdom."
   },
   {
     "number": 73,
@@ -2840,7 +3129,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Tropical",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "The Dryheart",
+    "region": "The Tropic Coast",
+    "population_region_text": "The Tribe of Featherwing numbers roughly 300 people, settled in The Tropic Coast, The Dryheart."
   },
   {
     "number": 74,
@@ -2875,7 +3168,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#e8b23a",
     "biome_category": "Tropical",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 380,
+    "continent": "The Dryheart",
+    "region": "The Tropic Coast",
+    "population_region_text": "The Tribe of Cascadeheart numbers roughly 380 people, settled in The Tropic Coast, The Dryheart."
   },
   {
     "number": 75,
@@ -2910,7 +3207,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#c2593b",
     "biome_category": "Tropical",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 360,
+    "continent": "The Dryheart",
+    "region": "The Tropic Coast",
+    "population_region_text": "The Tribe of Duskpetal numbers roughly 360 people, settled in The Tropic Coast, The Dryheart."
   },
   {
     "number": 76,
@@ -2945,7 +3246,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'5\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Meadow",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "The Long Shore",
+    "region": "The Bloomfields",
+    "population_region_text": "The Tribe of Honeymeadow numbers roughly 300 people, settled in The Bloomfields, The Long Shore."
   },
   {
     "number": 77,
@@ -2980,7 +3285,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#d97757",
     "biome_category": "Meadow",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 360,
+    "continent": "The Long Shore",
+    "region": "The Bloomfields",
+    "population_region_text": "The Tribe of Windchime numbers roughly 360 people, settled in The Bloomfields, The Long Shore."
   },
   {
     "number": 78,
@@ -3015,7 +3324,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Meadow",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 360,
+    "continent": "The Long Shore",
+    "region": "The Bloomfields",
+    "population_region_text": "The Tribe of Starmeadow numbers roughly 360 people, settled in The Bloomfields, The Long Shore."
   },
   {
     "number": 79,
@@ -3050,7 +3363,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#f0c419",
     "biome_category": "Meadow",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 360,
+    "continent": "The Long Shore",
+    "region": "The Bloomfields",
+    "population_region_text": "The Tribe of Tealeaf numbers roughly 360 people, settled in The Bloomfields, The Long Shore."
   },
   {
     "number": 80,
@@ -3085,7 +3402,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'9\"",
     "glow_color": "#c9922a",
     "biome_category": "Volcanic",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Sulfurspring numbers roughly 300 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 81,
@@ -3120,7 +3441,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#7bc47f",
     "biome_category": "River",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 320,
+    "continent": "Highgreen",
+    "region": "The River Country",
+    "population_region_text": "The Tribe of Bridgewright numbers roughly 320 people, settled in The River Country, Highgreen."
   },
   {
     "number": 82,
@@ -3155,7 +3480,11 @@ const TRIBES = [
     "woman_height": "5'11\"-6'2\"",
     "glow_color": "#e05c8a",
     "biome_category": "Cave",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "The Emberspine",
+    "region": "The Deep Caves",
+    "population_region_text": "The Tribe of Deepstone numbers roughly 280 people, settled in The Deep Caves, The Emberspine."
   },
   {
     "number": 83,
@@ -3190,7 +3519,11 @@ const TRIBES = [
     "woman_height": "4'4\"-4'8\"",
     "glow_color": "#9b7edc",
     "biome_category": "Cave",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 260,
+    "continent": "The Emberspine",
+    "region": "The Deep Caves",
+    "population_region_text": "The Tribe of Hollowdeep numbers roughly 260 people, settled in The Deep Caves, The Emberspine."
   },
   {
     "number": 84,
@@ -3225,7 +3558,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#e8823a",
     "biome_category": "Cave",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 280,
+    "continent": "The Emberspine",
+    "region": "The Deep Caves",
+    "population_region_text": "The Tribe of Echofall numbers roughly 280 people, settled in The Deep Caves, The Emberspine."
   },
   {
     "number": 85,
@@ -3260,7 +3597,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#e097c4",
     "biome_category": "Cave",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "The Emberspine",
+    "region": "The Deep Caves",
+    "population_region_text": "The Tribe of Crystalvein numbers roughly 260 people, settled in The Deep Caves, The Emberspine."
   },
   {
     "number": 86,
@@ -3295,7 +3636,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'10\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Cave",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 300,
+    "continent": "The Emberspine",
+    "region": "The Deep Caves",
+    "population_region_text": "The Tribe of Rootcavern numbers roughly 300 people, settled in The Deep Caves, The Emberspine."
   },
   {
     "number": 87,
@@ -3330,7 +3675,11 @@ const TRIBES = [
     "woman_height": "6'0\"-6'4\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Glacier",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "The Frostcrown",
+    "region": "The Glasswastes",
+    "population_region_text": "The Tribe of Icebound numbers roughly 240 people, settled in The Glasswastes, The Frostcrown."
   },
   {
     "number": 88,
@@ -3365,7 +3714,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#e8b23a",
     "biome_category": "Glacier",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "The Frostcrown",
+    "region": "The Glasswastes",
+    "population_region_text": "The Tribe of Auroralight numbers roughly 220 people, settled in The Glasswastes, The Frostcrown."
   },
   {
     "number": 89,
@@ -3400,7 +3753,11 @@ const TRIBES = [
     "woman_height": "4'3\"-4'6\"",
     "glow_color": "#c2593b",
     "biome_category": "Glacier",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 240,
+    "continent": "The Frostcrown",
+    "region": "The Glasswastes",
+    "population_region_text": "The Tribe of Frostkin numbers roughly 240 people, settled in The Glasswastes, The Frostcrown."
   },
   {
     "number": 90,
@@ -3435,7 +3792,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'9\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Glacier",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Frostcrown",
+    "region": "The Glasswastes",
+    "population_region_text": "The Tribe of Snowmelt numbers roughly 200 people, settled in The Glasswastes, The Frostcrown."
   },
   {
     "number": 91,
@@ -3470,7 +3831,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#d97757",
     "biome_category": "Mangrove",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 320,
+    "continent": "The Emberspine",
+    "region": "The Mangrove Coast",
+    "population_region_text": "The Tribe of Saltroot numbers roughly 320 people, settled in The Mangrove Coast, The Emberspine."
   },
   {
     "number": 92,
@@ -3505,7 +3870,11 @@ const TRIBES = [
     "woman_height": "5'7\"-5'11\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Mangrove",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 320,
+    "continent": "The Emberspine",
+    "region": "The Mangrove Coast",
+    "population_region_text": "The Tribe of Tidebloom numbers roughly 320 people, settled in The Mangrove Coast, The Emberspine."
   },
   {
     "number": 93,
@@ -3540,7 +3909,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#f0c419",
     "biome_category": "Mangrove",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 320,
+    "continent": "The Emberspine",
+    "region": "The Mangrove Coast",
+    "population_region_text": "The Tribe of Crabclaw numbers roughly 320 people, settled in The Mangrove Coast, The Emberspine."
   },
   {
     "number": 94,
@@ -3575,7 +3948,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#c9922a",
     "biome_category": "Mangrove",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "The Emberspine",
+    "region": "The Mangrove Coast",
+    "population_region_text": "The Tribe of Hushwater numbers roughly 300 people, settled in The Mangrove Coast, The Emberspine."
   },
   {
     "number": 95,
@@ -3610,7 +3987,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'9\"",
     "glow_color": "#7bc47f",
     "biome_category": "Fjord",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 280,
+    "continent": "The Frostcrown",
+    "region": "The Fjordreach",
+    "population_region_text": "The Tribe of Deepwater numbers roughly 280 people, settled in The Fjordreach, The Frostcrown."
   },
   {
     "number": 96,
@@ -3645,7 +4026,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'3\"",
     "glow_color": "#e05c8a",
     "biome_category": "Fjord",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "The Frostcrown",
+    "region": "The Fjordreach",
+    "population_region_text": "The Tribe of Cliffsong numbers roughly 260 people, settled in The Fjordreach, The Frostcrown."
   },
   {
     "number": 97,
@@ -3680,7 +4065,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#9b7edc",
     "biome_category": "Fjord",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 280,
+    "continent": "The Frostcrown",
+    "region": "The Fjordreach",
+    "population_region_text": "The Tribe of Sailwind numbers roughly 280 people, settled in The Fjordreach, The Frostcrown."
   },
   {
     "number": 98,
@@ -3715,7 +4104,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#e8823a",
     "biome_category": "Fjord",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "The Frostcrown",
+    "region": "The Fjordreach",
+    "population_region_text": "The Tribe of Sealbrine numbers roughly 280 people, settled in The Fjordreach, The Frostcrown."
   },
   {
     "number": 99,
@@ -3750,7 +4143,11 @@ const TRIBES = [
     "woman_height": "5'8\"-6'0\"",
     "glow_color": "#e097c4",
     "biome_category": "Fjord",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "The Frostcrown",
+    "region": "The Fjordreach",
+    "population_region_text": "The Tribe of Farreach numbers roughly 260 people, settled in The Fjordreach, The Frostcrown."
   },
   {
     "number": 100,
@@ -3785,7 +4182,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#4fb8c9",
     "biome_category": "River Floodplain",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 340,
+    "continent": "The Silt Kingdom",
+    "region": "The Delta Lowlands",
+    "population_region_text": "The Tribe of Silthaven numbers roughly 340 people, settled in The Delta Lowlands, The Silt Kingdom."
   },
   {
     "number": 101,
@@ -3820,7 +4221,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#8a8f9c",
     "biome_category": "River Floodplain",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 320,
+    "continent": "The Silt Kingdom",
+    "region": "The Delta Lowlands",
+    "population_region_text": "The Tribe of Claybank numbers roughly 320 people, settled in The Delta Lowlands, The Silt Kingdom."
   },
   {
     "number": 102,
@@ -3855,7 +4260,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'10\"",
     "glow_color": "#e8b23a",
     "biome_category": "River Floodplain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 340,
+    "continent": "The Silt Kingdom",
+    "region": "The Delta Lowlands",
+    "population_region_text": "The Tribe of Weirwatch numbers roughly 340 people, settled in The Delta Lowlands, The Silt Kingdom."
   },
   {
     "number": 103,
@@ -3890,7 +4299,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#c2593b",
     "biome_category": "River Floodplain",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 320,
+    "continent": "The Silt Kingdom",
+    "region": "The Delta Lowlands",
+    "population_region_text": "The Tribe of Floodsign numbers roughly 320 people, settled in The Delta Lowlands, The Silt Kingdom."
   },
   {
     "number": 104,
@@ -3925,7 +4338,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#9ac9e0",
     "biome_category": "River Floodplain",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 320,
+    "continent": "The Silt Kingdom",
+    "region": "The Delta Lowlands",
+    "population_region_text": "The Tribe of Floatgarden numbers roughly 320 people, settled in The Delta Lowlands, The Silt Kingdom."
   },
   {
     "number": 105,
@@ -3960,7 +4377,11 @@ const TRIBES = [
     "woman_height": "5'8\"-6'0\"",
     "glow_color": "#d97757",
     "biome_category": "River Floodplain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 320,
+    "continent": "The Silt Kingdom",
+    "region": "The Delta Lowlands",
+    "population_region_text": "The Tribe of Grazewater numbers roughly 320 people, settled in The Delta Lowlands, The Silt Kingdom."
   },
   {
     "number": 106,
@@ -3995,7 +4416,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Oasis",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 340,
+    "continent": "The Cradle Basin",
+    "region": "The Ringed Valley",
+    "population_region_text": "The Tribe of Wellspring numbers roughly 340 people, settled in The Ringed Valley, The Cradle Basin."
   },
   {
     "number": 107,
@@ -4030,7 +4455,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#f0c419",
     "biome_category": "Oasis",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 320,
+    "continent": "The Cradle Basin",
+    "region": "The Ringed Valley",
+    "population_region_text": "The Tribe of Datepalm numbers roughly 320 people, settled in The Ringed Valley, The Cradle Basin."
   },
   {
     "number": 108,
@@ -4065,7 +4494,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#c9922a",
     "biome_category": "Oasis",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 340,
+    "continent": "The Cradle Basin",
+    "region": "The Ringed Valley",
+    "population_region_text": "The Tribe of Caravanrest numbers roughly 340 people, settled in The Ringed Valley, The Cradle Basin."
   },
   {
     "number": 109,
@@ -4100,7 +4533,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#7bc47f",
     "biome_category": "Oasis",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 320,
+    "continent": "The Cradle Basin",
+    "region": "The Ringed Valley",
+    "population_region_text": "The Tribe of Mirageview numbers roughly 320 people, settled in The Ringed Valley, The Cradle Basin."
   },
   {
     "number": 110,
@@ -4135,7 +4572,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'10\"",
     "glow_color": "#e05c8a",
     "biome_category": "Oasis",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 340,
+    "continent": "The Cradle Basin",
+    "region": "The Ringed Valley",
+    "population_region_text": "The Tribe of Saltcaravan numbers roughly 340 people, settled in The Ringed Valley, The Cradle Basin."
   },
   {
     "number": 111,
@@ -4170,7 +4611,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'5\"",
     "glow_color": "#9b7edc",
     "biome_category": "Reef Atoll",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 220,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Spined Archipelago",
+    "population_region_text": "The Tribe of Pearldive numbers roughly 220 people, settled in The Spined Archipelago, the Island Systems."
   },
   {
     "number": 112,
@@ -4205,7 +4650,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#e8823a",
     "biome_category": "Reef Atoll",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Spined Archipelago",
+    "population_region_text": "The Tribe of Coralgarden numbers roughly 260 people, settled in The Spined Archipelago, the Island Systems."
   },
   {
     "number": 113,
@@ -4240,7 +4689,11 @@ const TRIBES = [
     "woman_height": "4'5\"-4'9\"",
     "glow_color": "#e097c4",
     "biome_category": "Reef Atoll",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 240,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Spined Archipelago",
+    "population_region_text": "The Tribe of Tidepool numbers roughly 240 people, settled in The Spined Archipelago, the Island Systems."
   },
   {
     "number": 114,
@@ -4275,7 +4728,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'10\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Reef Atoll",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Spined Archipelago",
+    "population_region_text": "The Tribe of Riftboat numbers roughly 260 people, settled in The Spined Archipelago, the Island Systems."
   },
   {
     "number": 115,
@@ -4310,7 +4767,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Reef Atoll",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 240,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Spined Archipelago",
+    "population_region_text": "The Tribe of Shellsong numbers roughly 240 people, settled in The Spined Archipelago, the Island Systems."
   },
   {
     "number": 116,
@@ -4345,7 +4806,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#e8b23a",
     "biome_category": "Archipelago",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Thousand Isles",
+    "population_region_text": "The Tribe of Islehopper numbers roughly 260 people, settled in The Thousand Isles, the Island Systems."
   },
   {
     "number": 117,
@@ -4380,7 +4845,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#c2593b",
     "biome_category": "Archipelago",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 260,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Thousand Isles",
+    "population_region_text": "The Tribe of Stormward numbers roughly 260 people, settled in The Thousand Isles, the Island Systems."
   },
   {
     "number": 118,
@@ -4415,7 +4884,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'5\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Archipelago",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 240,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Thousand Isles",
+    "population_region_text": "The Tribe of Shellcurrency numbers roughly 240 people, settled in The Thousand Isles, the Island Systems."
   },
   {
     "number": 119,
@@ -4450,7 +4923,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#d97757",
     "biome_category": "Archipelago",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 240,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Thousand Isles",
+    "population_region_text": "The Tribe of Starfleet numbers roughly 240 people, settled in The Thousand Isles, the Island Systems."
   },
   {
     "number": 120,
@@ -4485,7 +4962,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Archipelago",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 280,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Thousand Isles",
+    "population_region_text": "The Tribe of Flockwatch numbers roughly 280 people, settled in The Thousand Isles, the Island Systems."
   },
   {
     "number": 121,
@@ -4520,7 +5001,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'10\"",
     "glow_color": "#f0c419",
     "biome_category": "Archipelago",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Thousand Isles",
+    "population_region_text": "The Tribe of Netcast numbers roughly 260 people, settled in The Thousand Isles, the Island Systems."
   },
   {
     "number": 122,
@@ -4555,7 +5040,11 @@ const TRIBES = [
     "woman_height": "4'10\"-5'2\"",
     "glow_color": "#c9922a",
     "biome_category": "Archipelago",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 240,
+    "continent": "ISLAND_SYSTEMS",
+    "region": "The Thousand Isles",
+    "population_region_text": "The Tribe of Saltweave numbers roughly 240 people, settled in The Thousand Isles, the Island Systems."
   },
   {
     "number": 123,
@@ -4590,7 +5079,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#7bc47f",
     "biome_category": "Bamboo Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 240,
+    "continent": "The Long Shore",
+    "region": "The Bamboo Coast",
+    "population_region_text": "The Tribe of Bamboorise numbers roughly 240 people, settled in The Bamboo Coast, The Long Shore."
   },
   {
     "number": 124,
@@ -4625,7 +5118,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#e05c8a",
     "biome_category": "Bamboo Forest",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "The Long Shore",
+    "region": "The Bamboo Coast",
+    "population_region_text": "The Tribe of Fluteharmony numbers roughly 240 people, settled in The Bamboo Coast, The Long Shore."
   },
   {
     "number": 125,
@@ -4660,7 +5157,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#9b7edc",
     "biome_category": "Bamboo Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "The Long Shore",
+    "region": "The Bamboo Coast",
+    "population_region_text": "The Tribe of Pagegrove numbers roughly 220 people, settled in The Bamboo Coast, The Long Shore."
   },
   {
     "number": 126,
@@ -4695,7 +5196,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#e8823a",
     "biome_category": "Bamboo Forest",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 240,
+    "continent": "The Long Shore",
+    "region": "The Bamboo Coast",
+    "population_region_text": "The Tribe of Shootharvest numbers roughly 240 people, settled in The Bamboo Coast, The Long Shore."
   },
   {
     "number": 127,
@@ -4730,7 +5235,11 @@ const TRIBES = [
     "woman_height": "5'8\"-6'0\"",
     "glow_color": "#e097c4",
     "biome_category": "Bamboo Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "The Long Shore",
+    "region": "The Bamboo Coast",
+    "population_region_text": "The Tribe of Scaffoldreach numbers roughly 220 people, settled in The Bamboo Coast, The Long Shore."
   },
   {
     "number": 128,
@@ -4765,7 +5274,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Bamboo Forest",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 220,
+    "continent": "The Long Shore",
+    "region": "The Bamboo Coast",
+    "population_region_text": "The Tribe of Panweave numbers roughly 220 people, settled in The Bamboo Coast, The Long Shore."
   },
   {
     "number": 129,
@@ -4800,7 +5313,11 @@ const TRIBES = [
     "woman_height": "6'0\"-6'4\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Giant-Tree Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Skytrunk numbers roughly 280 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 130,
@@ -4835,7 +5352,11 @@ const TRIBES = [
     "woman_height": "4'8\"-5'0\"",
     "glow_color": "#e8b23a",
     "biome_category": "Giant-Tree Forest",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Ringcount numbers roughly 220 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 131,
@@ -4870,7 +5391,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#c2593b",
     "biome_category": "Giant-Tree Forest",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Sapflow numbers roughly 220 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 132,
@@ -4905,7 +5430,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'9\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Giant-Tree Forest",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Hollowbark numbers roughly 240 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 133,
@@ -4940,7 +5469,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#d97757",
     "biome_category": "Giant-Tree Forest",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Mossveil numbers roughly 220 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 134,
@@ -4975,7 +5508,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'10\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Giant-Tree Forest",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 240,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Cathedralroot numbers roughly 240 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 135,
@@ -5010,7 +5547,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#f0c419",
     "biome_category": "Rainforest Canopy",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Vinebridge numbers roughly 220 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 136,
@@ -5045,7 +5586,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#c9922a",
     "biome_category": "Rainforest Canopy",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Raincollector numbers roughly 260 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 137,
@@ -5080,7 +5625,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'10\"",
     "glow_color": "#7bc47f",
     "biome_category": "Rainforest Canopy",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 300,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Orchidnest numbers roughly 300 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 138,
@@ -5115,7 +5664,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#e05c8a",
     "biome_category": "Rainforest Canopy",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Canopymend numbers roughly 260 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 139,
@@ -5150,7 +5703,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#9b7edc",
     "biome_category": "Rainforest Canopy",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Hunterscanopy numbers roughly 220 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 140,
@@ -5185,7 +5742,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#e8823a",
     "biome_category": "Rainforest Canopy",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "Highgreen",
+    "region": "The Canopy Reaches",
+    "population_region_text": "The Tribe of Stormleaf numbers roughly 260 people, settled in The Canopy Reaches, Highgreen."
   },
   {
     "number": 141,
@@ -5220,7 +5781,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#e097c4",
     "biome_category": "Cloud Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Cloudward Slopes",
+    "population_region_text": "The Tribe of Mistwalker numbers roughly 220 people, settled in The Cloudward Slopes, Highgreen."
   },
   {
     "number": 142,
@@ -5255,7 +5820,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Cloud Forest",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 280,
+    "continent": "Highgreen",
+    "region": "The Cloudward Slopes",
+    "population_region_text": "The Tribe of Lichenfold numbers roughly 280 people, settled in The Cloudward Slopes, Highgreen."
   },
   {
     "number": 143,
@@ -5290,7 +5859,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Cloud Forest",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "Highgreen",
+    "region": "The Cloudward Slopes",
+    "population_region_text": "The Tribe of Featherplume numbers roughly 240 people, settled in The Cloudward Slopes, Highgreen."
   },
   {
     "number": 144,
@@ -5325,7 +5898,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#e8b23a",
     "biome_category": "Cloud Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "Highgreen",
+    "region": "The Cloudward Slopes",
+    "population_region_text": "The Tribe of Teafog numbers roughly 280 people, settled in The Cloudward Slopes, Highgreen."
   },
   {
     "number": 145,
@@ -5360,7 +5937,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'5\"",
     "glow_color": "#c2593b",
     "biome_category": "Cloud Forest",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The Cloudward Slopes",
+    "population_region_text": "The Tribe of Stillmeditate numbers roughly 220 people, settled in The Cloudward Slopes, Highgreen."
   },
   {
     "number": 146,
@@ -5395,7 +5976,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'10\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Cloud Forest",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "Highgreen",
+    "region": "The Cloudward Slopes",
+    "population_region_text": "The Tribe of Cloudspring numbers roughly 200 people, settled in The Cloudward Slopes, Highgreen."
   },
   {
     "number": 147,
@@ -5430,7 +6015,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#d97757",
     "biome_category": "Cold High-Altitude Desert",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "Highgreen",
+    "region": "The High Waste",
+    "population_region_text": "The Tribe of Thinwind numbers roughly 200 people, settled in The High Waste, Highgreen."
   },
   {
     "number": 148,
@@ -5465,7 +6054,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Cold High-Altitude Desert",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "Highgreen",
+    "region": "The High Waste",
+    "population_region_text": "The Tribe of Saltpan numbers roughly 180 people, settled in The High Waste, Highgreen."
   },
   {
     "number": 149,
@@ -5500,7 +6093,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#f0c419",
     "biome_category": "Cold High-Altitude Desert",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 240,
+    "continent": "Highgreen",
+    "region": "The High Waste",
+    "population_region_text": "The Tribe of Frostroot numbers roughly 240 people, settled in The High Waste, Highgreen."
   },
   {
     "number": 150,
@@ -5535,7 +6132,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#c9922a",
     "biome_category": "Cold High-Altitude Desert",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "Highgreen",
+    "region": "The High Waste",
+    "population_region_text": "The Tribe of Starkridge numbers roughly 200 people, settled in The High Waste, Highgreen."
   },
   {
     "number": 151,
@@ -5570,7 +6171,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#7bc47f",
     "biome_category": "Cold High-Altitude Desert",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The High Waste",
+    "population_region_text": "The Tribe of Duskglass numbers roughly 220 people, settled in The High Waste, Highgreen."
   },
   {
     "number": 152,
@@ -5605,7 +6210,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#e05c8a",
     "biome_category": "Cold High-Altitude Desert",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "Highgreen",
+    "region": "The High Waste",
+    "population_region_text": "The Tribe of Nightclear numbers roughly 220 people, settled in The High Waste, Highgreen."
   },
   {
     "number": 153,
@@ -5640,7 +6249,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#9b7edc",
     "biome_category": "Scrubland Chaparral",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 240,
+    "continent": "The Dryheart",
+    "region": "The Scrubland Reach",
+    "population_region_text": "The Tribe of Firewatch numbers roughly 240 people, settled in The Scrubland Reach, The Dryheart."
   },
   {
     "number": 154,
@@ -5675,7 +6288,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#e8823a",
     "biome_category": "Scrubland Chaparral",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 320,
+    "continent": "The Dryheart",
+    "region": "The Scrubland Reach",
+    "population_region_text": "The Tribe of Sagehollow numbers roughly 320 people, settled in The Scrubland Reach, The Dryheart."
   },
   {
     "number": 155,
@@ -5710,7 +6327,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#e097c4",
     "biome_category": "Scrubland Chaparral",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 240,
+    "continent": "The Dryheart",
+    "region": "The Scrubland Reach",
+    "population_region_text": "The Tribe of Thornweave numbers roughly 240 people, settled in The Scrubland Reach, The Dryheart."
   },
   {
     "number": 156,
@@ -5745,7 +6366,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Scrubland Chaparral",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "The Dryheart",
+    "region": "The Scrubland Reach",
+    "population_region_text": "The Tribe of Windshift numbers roughly 220 people, settled in The Scrubland Reach, The Dryheart."
   },
   {
     "number": 157,
@@ -5780,7 +6405,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Scrubland Chaparral",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "The Dryheart",
+    "region": "The Scrubland Reach",
+    "population_region_text": "The Tribe of Honeyscrub numbers roughly 260 people, settled in The Scrubland Reach, The Dryheart."
   },
   {
     "number": 158,
@@ -5815,7 +6444,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#e8b23a",
     "biome_category": "Scrubland Chaparral",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 280,
+    "continent": "The Dryheart",
+    "region": "The Scrubland Reach",
+    "population_region_text": "The Tribe of Duskgrove numbers roughly 280 people, settled in The Scrubland Reach, The Dryheart."
   },
   {
     "number": 159,
@@ -5850,7 +6483,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#c2593b",
     "biome_category": "Sand Sea",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 160,
+    "continent": "The Cradle Basin",
+    "region": "The Sand Sea Proper",
+    "population_region_text": "The Tribe of Duneglide numbers roughly 160 people, settled in The Sand Sea Proper, The Cradle Basin."
   },
   {
     "number": 160,
@@ -5885,7 +6522,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Sand Sea",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 220,
+    "continent": "The Cradle Basin",
+    "region": "The Sand Sea Proper",
+    "population_region_text": "The Tribe of Stormveil numbers roughly 220 people, settled in The Sand Sea Proper, The Cradle Basin."
   },
   {
     "number": 161,
@@ -5920,7 +6561,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#d97757",
     "biome_category": "Sand Sea",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 160,
+    "continent": "The Cradle Basin",
+    "region": "The Sand Sea Proper",
+    "population_region_text": "The Tribe of Farcount numbers roughly 160 people, settled in The Sand Sea Proper, The Cradle Basin."
   },
   {
     "number": 162,
@@ -5955,7 +6600,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Sand Sea",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 200,
+    "continent": "The Cradle Basin",
+    "region": "The Sand Sea Proper",
+    "population_region_text": "The Tribe of Sandveil numbers roughly 200 people, settled in The Sand Sea Proper, The Cradle Basin."
   },
   {
     "number": 163,
@@ -5990,7 +6639,11 @@ const TRIBES = [
     "woman_height": "5'6\"-5'10\"",
     "glow_color": "#f0c419",
     "biome_category": "Sand Sea",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 220,
+    "continent": "The Cradle Basin",
+    "region": "The Sand Sea Proper",
+    "population_region_text": "The Tribe of Bonecarve numbers roughly 220 people, settled in The Sand Sea Proper, The Cradle Basin."
   },
   {
     "number": 164,
@@ -6025,7 +6678,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#c9922a",
     "biome_category": "Sand Sea",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 200,
+    "continent": "The Cradle Basin",
+    "region": "The Sand Sea Proper",
+    "population_region_text": "The Tribe of Sunscour numbers roughly 200 people, settled in The Sand Sea Proper, The Cradle Basin."
   },
   {
     "number": 165,
@@ -6060,7 +6717,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#7bc47f",
     "biome_category": "Peat Bog",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 280,
+    "continent": "The Silt Kingdom",
+    "region": "The Peat Country",
+    "population_region_text": "The Tribe of Turfcut numbers roughly 280 people, settled in The Peat Country, The Silt Kingdom."
   },
   {
     "number": 166,
@@ -6095,7 +6756,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#e05c8a",
     "biome_category": "Peat Bog",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "The Silt Kingdom",
+    "region": "The Peat Country",
+    "population_region_text": "The Tribe of Marshlight numbers roughly 260 people, settled in The Peat Country, The Silt Kingdom."
   },
   {
     "number": 167,
@@ -6130,7 +6795,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#9b7edc",
     "biome_category": "Peat Bog",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 320,
+    "continent": "The Silt Kingdom",
+    "region": "The Peat Country",
+    "population_region_text": "The Tribe of Berryfen numbers roughly 320 people, settled in The Peat Country, The Silt Kingdom."
   },
   {
     "number": 168,
@@ -6165,7 +6834,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#e8823a",
     "biome_category": "Peat Bog",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "The Silt Kingdom",
+    "region": "The Peat Country",
+    "population_region_text": "The Tribe of Mosskeeper numbers roughly 280 people, settled in The Peat Country, The Silt Kingdom."
   },
   {
     "number": 169,
@@ -6200,7 +6873,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#e097c4",
     "biome_category": "Peat Bog",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 260,
+    "continent": "The Silt Kingdom",
+    "region": "The Peat Country",
+    "population_region_text": "The Tribe of Vaportrace numbers roughly 260 people, settled in The Peat Country, The Silt Kingdom."
   },
   {
     "number": 170,
@@ -6235,7 +6912,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Peat Bog",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "The Silt Kingdom",
+    "region": "The Peat Country",
+    "population_region_text": "The Tribe of Floatmat numbers roughly 260 people, settled in The Peat Country, The Silt Kingdom."
   },
   {
     "number": 171,
@@ -6270,7 +6951,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Salt Marsh",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "The Silt Kingdom",
+    "region": "The Salt Marshes",
+    "population_region_text": "The Tribe of Tidechannel numbers roughly 180 people, settled in The Salt Marshes, The Silt Kingdom."
   },
   {
     "number": 172,
@@ -6305,7 +6990,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#e8b23a",
     "biome_category": "Salt Marsh",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 180,
+    "continent": "The Silt Kingdom",
+    "region": "The Salt Marshes",
+    "population_region_text": "The Tribe of Saltgrass numbers roughly 180 people, settled in The Salt Marshes, The Silt Kingdom."
   },
   {
     "number": 173,
@@ -6340,7 +7029,11 @@ const TRIBES = [
     "woman_height": "5'6\"-6'0\"",
     "glow_color": "#c2593b",
     "biome_category": "Salt Marsh",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "The Silt Kingdom",
+    "region": "The Salt Marshes",
+    "population_region_text": "The Tribe of Herontide numbers roughly 220 people, settled in The Salt Marshes, The Silt Kingdom."
   },
   {
     "number": 174,
@@ -6375,7 +7068,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Salt Marsh",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "The Silt Kingdom",
+    "region": "The Salt Marshes",
+    "population_region_text": "The Tribe of Brinesense numbers roughly 220 people, settled in The Salt Marshes, The Silt Kingdom."
   },
   {
     "number": 175,
@@ -6410,7 +7107,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#d97757",
     "biome_category": "Salt Marsh",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 240,
+    "continent": "The Silt Kingdom",
+    "region": "The Salt Marshes",
+    "population_region_text": "The Tribe of Farcall numbers roughly 240 people, settled in The Salt Marshes, The Silt Kingdom."
   },
   {
     "number": 176,
@@ -6445,7 +7146,11 @@ const TRIBES = [
     "woman_height": "4'10\"-5'2\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Salt Marsh",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 220,
+    "continent": "The Silt Kingdom",
+    "region": "The Salt Marshes",
+    "population_region_text": "The Tribe of Pickleroot numbers roughly 220 people, settled in The Salt Marshes, The Silt Kingdom."
   },
   {
     "number": 177,
@@ -6480,7 +7185,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#f0c419",
     "biome_category": "Geothermal Geyser Field",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 300,
+    "continent": "The Emberspine",
+    "region": "The Geyser Fields",
+    "population_region_text": "The Tribe of Geysertime numbers roughly 300 people, settled in The Geyser Fields, The Emberspine."
   },
   {
     "number": 178,
@@ -6515,7 +7224,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#c9922a",
     "biome_category": "Geothermal Geyser Field",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 280,
+    "continent": "The Emberspine",
+    "region": "The Geyser Fields",
+    "population_region_text": "The Tribe of Mudbloom numbers roughly 280 people, settled in The Geyser Fields, The Emberspine."
   },
   {
     "number": 179,
@@ -6550,7 +7263,11 @@ const TRIBES = [
     "woman_height": "5'6\"-6'0\"",
     "glow_color": "#7bc47f",
     "biome_category": "Geothermal Geyser Field",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 300,
+    "continent": "The Emberspine",
+    "region": "The Geyser Fields",
+    "population_region_text": "The Tribe of Terracestone numbers roughly 300 people, settled in The Geyser Fields, The Emberspine."
   },
   {
     "number": 180,
@@ -6585,7 +7302,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#e05c8a",
     "biome_category": "Geothermal Geyser Field",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 300,
+    "continent": "The Emberspine",
+    "region": "The Geyser Fields",
+    "population_region_text": "The Tribe of Steamvent numbers roughly 300 people, settled in The Geyser Fields, The Emberspine."
   },
   {
     "number": 181,
@@ -6620,7 +7341,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#9b7edc",
     "biome_category": "Geothermal Geyser Field",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "The Emberspine",
+    "region": "The Geyser Fields",
+    "population_region_text": "The Tribe of Vaporwrit numbers roughly 280 people, settled in The Geyser Fields, The Emberspine."
   },
   {
     "number": 182,
@@ -6655,7 +7380,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#e8823a",
     "biome_category": "Geothermal Geyser Field",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "The Emberspine",
+    "region": "The Geyser Fields",
+    "population_region_text": "The Tribe of Pressuremark numbers roughly 280 people, settled in The Geyser Fields, The Emberspine."
   },
   {
     "number": 183,
@@ -6690,7 +7419,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#e097c4",
     "biome_category": "Dormant Ash Plain",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 300,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Ashfertile numbers roughly 300 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 184,
@@ -6725,7 +7458,11 @@ const TRIBES = [
     "woman_height": "5'6\"-6'0\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Dormant Ash Plain",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 240,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Blackglass numbers roughly 240 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 185,
@@ -6760,7 +7497,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Dormant Ash Plain",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Emberkeep numbers roughly 280 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 186,
@@ -6795,7 +7536,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#e8b23a",
     "biome_category": "Dormant Ash Plain",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 200,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Lavatube numbers roughly 200 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 187,
@@ -6830,7 +7575,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#c2593b",
     "biome_category": "Dormant Ash Plain",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 220,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Cindergraze numbers roughly 220 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 188,
@@ -6865,7 +7614,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'1\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Dormant Ash Plain",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Emberspine",
+    "region": "The Volcanic Spine",
+    "population_region_text": "The Tribe of Stonecast numbers roughly 200 people, settled in The Volcanic Spine, The Emberspine."
   },
   {
     "number": 189,
@@ -6900,7 +7653,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#d97757",
     "biome_category": "Prairie",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 320,
+    "continent": "The Dryheart",
+    "region": "The Open Prairie",
+    "population_region_text": "The Tribe of Windbreak numbers roughly 320 people, settled in The Open Prairie, The Dryheart."
   },
   {
     "number": 190,
@@ -6935,7 +7692,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Prairie",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 340,
+    "continent": "The Dryheart",
+    "region": "The Open Prairie",
+    "population_region_text": "The Tribe of Thatchweave numbers roughly 340 people, settled in The Open Prairie, The Dryheart."
   },
   {
     "number": 191,
@@ -6970,7 +7731,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#f0c419",
     "biome_category": "Prairie",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 280,
+    "continent": "The Dryheart",
+    "region": "The Open Prairie",
+    "population_region_text": "The Tribe of Herdtrail numbers roughly 280 people, settled in The Open Prairie, The Dryheart."
   },
   {
     "number": 192,
@@ -7005,7 +7770,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#c9922a",
     "biome_category": "Prairie",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 340,
+    "continent": "The Dryheart",
+    "region": "The Open Prairie",
+    "population_region_text": "The Tribe of Rootcellar numbers roughly 340 people, settled in The Open Prairie, The Dryheart."
   },
   {
     "number": 193,
@@ -7040,7 +7809,11 @@ const TRIBES = [
     "woman_height": "5'6\"-6'0\"",
     "glow_color": "#7bc47f",
     "biome_category": "Prairie",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 340,
+    "continent": "The Dryheart",
+    "region": "The Open Prairie",
+    "population_region_text": "The Tribe of Skyline numbers roughly 340 people, settled in The Open Prairie, The Dryheart."
   },
   {
     "number": 194,
@@ -7075,7 +7848,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#e05c8a",
     "biome_category": "Prairie",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 360,
+    "continent": "The Dryheart",
+    "region": "The Open Prairie",
+    "population_region_text": "The Tribe of Fireborn numbers roughly 360 people, settled in The Open Prairie, The Dryheart."
   },
   {
     "number": 195,
@@ -7110,7 +7887,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#9b7edc",
     "biome_category": "Hillocks",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 340,
+    "continent": "The Long Shore",
+    "region": "The Rolling Hillocks",
+    "population_region_text": "The Tribe of Terracefold numbers roughly 340 people, settled in The Rolling Hillocks, The Long Shore."
   },
   {
     "number": 196,
@@ -7145,7 +7926,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#e8823a",
     "biome_category": "Hillocks",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 280,
+    "continent": "The Long Shore",
+    "region": "The Rolling Hillocks",
+    "population_region_text": "The Tribe of Stonewall numbers roughly 280 people, settled in The Rolling Hillocks, The Long Shore."
   },
   {
     "number": 197,
@@ -7180,7 +7965,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#e097c4",
     "biome_category": "Hillocks",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "The Long Shore",
+    "region": "The Rolling Hillocks",
+    "population_region_text": "The Tribe of Woolcrest numbers roughly 260 people, settled in The Rolling Hillocks, The Long Shore."
   },
   {
     "number": 198,
@@ -7215,7 +8004,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Hillocks",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "The Long Shore",
+    "region": "The Rolling Hillocks",
+    "population_region_text": "The Tribe of Echorolling numbers roughly 280 people, settled in The Rolling Hillocks, The Long Shore."
   },
   {
     "number": 199,
@@ -7250,7 +8043,11 @@ const TRIBES = [
     "woman_height": "5'6\"-6'0\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Hillocks",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 300,
+    "continent": "The Long Shore",
+    "region": "The Rolling Hillocks",
+    "population_region_text": "The Tribe of Beaconrise numbers roughly 300 people, settled in The Rolling Hillocks, The Long Shore."
   },
   {
     "number": 200,
@@ -7285,7 +8082,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#e8b23a",
     "biome_category": "Hillocks",
-    "body_category": "Average"
+    "body_category": "Average",
+    "population": 280,
+    "continent": "The Long Shore",
+    "region": "The Rolling Hillocks",
+    "population_region_text": "The Tribe of Wildbloom numbers roughly 280 people, settled in The Rolling Hillocks, The Long Shore."
   },
   {
     "number": 201,
@@ -7320,7 +8121,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#c2593b",
     "biome_category": "Hillocks",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "The Long Shore",
+    "region": "The Rolling Hillocks",
+    "population_region_text": "The Tribe of Rollingcart numbers roughly 260 people, settled in The Rolling Hillocks, The Long Shore."
   },
   {
     "number": 202,
@@ -7355,7 +8160,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Foothills",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "The Long Shore",
+    "region": "The Foothill Reach",
+    "population_region_text": "The Tribe of Streamhead numbers roughly 300 people, settled in The Foothill Reach, The Long Shore."
   },
   {
     "number": 203,
@@ -7390,7 +8199,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#d97757",
     "biome_category": "Foothills",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "The Long Shore",
+    "region": "The Foothill Reach",
+    "population_region_text": "The Tribe of Oreveil numbers roughly 240 people, settled in The Foothill Reach, The Long Shore."
   },
   {
     "number": 204,
@@ -7425,7 +8238,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Foothills",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "The Long Shore",
+    "region": "The Foothill Reach",
+    "population_region_text": "The Tribe of Treelineedge numbers roughly 280 people, settled in The Foothill Reach, The Long Shore."
   },
   {
     "number": 205,
@@ -7460,7 +8277,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#f0c419",
     "biome_category": "Foothills",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "The Long Shore",
+    "region": "The Foothill Reach",
+    "population_region_text": "The Tribe of Slidewatch numbers roughly 220 people, settled in The Foothill Reach, The Long Shore."
   },
   {
     "number": 206,
@@ -7495,7 +8316,11 @@ const TRIBES = [
     "woman_height": "5'6\"-6'0\"",
     "glow_color": "#c9922a",
     "biome_category": "Foothills",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 260,
+    "continent": "The Long Shore",
+    "region": "The Foothill Reach",
+    "population_region_text": "The Tribe of Passguard numbers roughly 260 people, settled in The Foothill Reach, The Long Shore."
   },
   {
     "number": 207,
@@ -7530,7 +8355,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#7bc47f",
     "biome_category": "Foothills",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 280,
+    "continent": "The Long Shore",
+    "region": "The Foothill Reach",
+    "population_region_text": "The Tribe of Vinehill numbers roughly 280 people, settled in The Foothill Reach, The Long Shore."
   },
   {
     "number": 208,
@@ -7565,7 +8394,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#e05c8a",
     "biome_category": "Terraced Farmland",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 380,
+    "continent": "The Long Shore",
+    "region": "The Terraced Rise",
+    "population_region_text": "The Tribe of Paddyrise numbers roughly 380 people, settled in The Terraced Rise, The Long Shore."
   },
   {
     "number": 209,
@@ -7600,7 +8433,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#9b7edc",
     "biome_category": "Terraced Farmland",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 340,
+    "continent": "The Long Shore",
+    "region": "The Terraced Rise",
+    "population_region_text": "The Tribe of Channelrun numbers roughly 340 people, settled in The Terraced Rise, The Long Shore."
   },
   {
     "number": 210,
@@ -7635,7 +8472,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#e8823a",
     "biome_category": "Terraced Farmland",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 340,
+    "continent": "The Long Shore",
+    "region": "The Terraced Rise",
+    "population_region_text": "The Tribe of Highstep numbers roughly 340 people, settled in The Terraced Rise, The Long Shore."
   },
   {
     "number": 211,
@@ -7670,7 +8511,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#e097c4",
     "biome_category": "Terraced Farmland",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 360,
+    "continent": "The Long Shore",
+    "region": "The Terraced Rise",
+    "population_region_text": "The Tribe of Harvestfold numbers roughly 360 people, settled in The Terraced Rise, The Long Shore."
   },
   {
     "number": 212,
@@ -7705,7 +8550,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Terraced Farmland",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 360,
+    "continent": "The Long Shore",
+    "region": "The Terraced Rise",
+    "population_region_text": "The Tribe of Sunstep numbers roughly 360 people, settled in The Terraced Rise, The Long Shore."
   },
   {
     "number": 213,
@@ -7740,7 +8589,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Terraced Farmland",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 380,
+    "continent": "The Long Shore",
+    "region": "The Terraced Rise",
+    "population_region_text": "The Tribe of Seedkeep numbers roughly 380 people, settled in The Terraced Rise, The Long Shore."
   },
   {
     "number": 214,
@@ -7775,7 +8628,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#e8b23a",
     "biome_category": "Canyon Badlands",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 160,
+    "continent": "The Cradle Basin",
+    "region": "The Cut Canyons",
+    "population_region_text": "The Tribe of Alcovehearth numbers roughly 160 people, settled in The Cut Canyons, The Cradle Basin."
   },
   {
     "number": 215,
@@ -7810,7 +8667,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#c2593b",
     "biome_category": "Canyon Badlands",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "The Cradle Basin",
+    "region": "The Cut Canyons",
+    "population_region_text": "The Tribe of Flashwatch numbers roughly 180 people, settled in The Cut Canyons, The Cradle Basin."
   },
   {
     "number": 216,
@@ -7845,7 +8706,11 @@ const TRIBES = [
     "woman_height": "5'6\"-6'0\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Canyon Badlands",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 260,
+    "continent": "The Cradle Basin",
+    "region": "The Cut Canyons",
+    "population_region_text": "The Tribe of Mesatop numbers roughly 260 people, settled in The Cut Canyons, The Cradle Basin."
   },
   {
     "number": 217,
@@ -7880,7 +8745,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#d97757",
     "biome_category": "Canyon Badlands",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "The Cradle Basin",
+    "region": "The Cut Canyons",
+    "population_region_text": "The Tribe of Rockecho numbers roughly 180 people, settled in The Cut Canyons, The Cradle Basin."
   },
   {
     "number": 218,
@@ -7915,7 +8784,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Canyon Badlands",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "The Cradle Basin",
+    "region": "The Cut Canyons",
+    "population_region_text": "The Tribe of Erosionwise numbers roughly 180 people, settled in The Cut Canyons, The Cradle Basin."
   },
   {
     "number": 219,
@@ -7950,7 +8823,11 @@ const TRIBES = [
     "woman_height": "5'8\"-6'2\"",
     "glow_color": "#f0c419",
     "biome_category": "Canyon Badlands",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 140,
+    "continent": "The Cradle Basin",
+    "region": "The Cut Canyons",
+    "population_region_text": "The Tribe of Rimwalker numbers roughly 140 people, settled in The Cut Canyons, The Cradle Basin."
   },
   {
     "number": 220,
@@ -7985,7 +8862,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#c9922a",
     "biome_category": "Karst Sinkhole",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Emberspine",
+    "region": "The Karst Country",
+    "population_region_text": "The Tribe of Cenotedeep numbers roughly 200 people, settled in The Karst Country, The Emberspine."
   },
   {
     "number": 221,
@@ -8020,7 +8901,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#7bc47f",
     "biome_category": "Karst Sinkhole",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "The Emberspine",
+    "region": "The Karst Country",
+    "population_region_text": "The Tribe of Undercurrent numbers roughly 180 people, settled in The Karst Country, The Emberspine."
   },
   {
     "number": 222,
@@ -8055,7 +8940,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#e05c8a",
     "biome_category": "Karst Sinkhole",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "The Emberspine",
+    "region": "The Karst Country",
+    "population_region_text": "The Tribe of Hollowsense numbers roughly 180 people, settled in The Karst Country, The Emberspine."
   },
   {
     "number": 223,
@@ -8090,7 +8979,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#9b7edc",
     "biome_category": "Karst Sinkhole",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 200,
+    "continent": "The Emberspine",
+    "region": "The Karst Country",
+    "population_region_text": "The Tribe of Dripstone numbers roughly 200 people, settled in The Karst Country, The Emberspine."
   },
   {
     "number": 224,
@@ -8125,7 +9018,11 @@ const TRIBES = [
     "woman_height": "5'6\"-6'0\"",
     "glow_color": "#e8823a",
     "biome_category": "Karst Sinkhole",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Emberspine",
+    "region": "The Karst Country",
+    "population_region_text": "The Tribe of Archspan numbers roughly 200 people, settled in The Karst Country, The Emberspine."
   },
   {
     "number": 225,
@@ -8160,7 +9057,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#e097c4",
     "biome_category": "Karst Sinkhole",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 240,
+    "continent": "The Emberspine",
+    "region": "The Karst Country",
+    "population_region_text": "The Tribe of Sinkgarden numbers roughly 240 people, settled in The Karst Country, The Emberspine."
   },
   {
     "number": 226,
@@ -8195,7 +9096,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Salt Flats",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 200,
+    "continent": "The Cradle Basin",
+    "region": "The White Flats",
+    "population_region_text": "The Tribe of Mirrorflat numbers roughly 200 people, settled in The White Flats, The Cradle Basin."
   },
   {
     "number": 227,
@@ -8230,7 +9135,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Salt Flats",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "The Cradle Basin",
+    "region": "The White Flats",
+    "population_region_text": "The Tribe of Crystalcut numbers roughly 240 people, settled in The White Flats, The Cradle Basin."
   },
   {
     "number": 228,
@@ -8265,7 +9174,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#e8b23a",
     "biome_category": "Salt Flats",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "The Cradle Basin",
+    "region": "The White Flats",
+    "population_region_text": "The Tribe of Duskcolor numbers roughly 220 people, settled in The White Flats, The Cradle Basin."
   },
   {
     "number": 229,
@@ -8300,7 +9213,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#c2593b",
     "biome_category": "Salt Flats",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Cradle Basin",
+    "region": "The White Flats",
+    "population_region_text": "The Tribe of Whitewalk numbers roughly 200 people, settled in The White Flats, The Cradle Basin."
   },
   {
     "number": 230,
@@ -8335,7 +9252,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Salt Flats",
-    "body_category": "Chubby/Soft"
+    "body_category": "Chubby/Soft",
+    "population": 220,
+    "continent": "The Cradle Basin",
+    "region": "The White Flats",
+    "population_region_text": "The Tribe of Puresalt numbers roughly 220 people, settled in The White Flats, The Cradle Basin."
   },
   {
     "number": 231,
@@ -8370,7 +9291,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#d97757",
     "biome_category": "Salt Flats",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 240,
+    "continent": "The Cradle Basin",
+    "region": "The White Flats",
+    "population_region_text": "The Tribe of Boneflats numbers roughly 240 people, settled in The White Flats, The Cradle Basin."
   },
   {
     "number": 232,
@@ -8405,7 +9330,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#6fa8dc",
     "biome_category": "High Plateau",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 300,
+    "continent": "The Cradle Basin",
+    "region": "The High Tableland",
+    "population_region_text": "The Tribe of Tablelands numbers roughly 300 people, settled in The High Tableland, The Cradle Basin."
   },
   {
     "number": 233,
@@ -8440,7 +9369,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#f0c419",
     "biome_category": "High Plateau",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "The Cradle Basin",
+    "region": "The High Tableland",
+    "population_region_text": "The Tribe of Countglance numbers roughly 300 people, settled in The High Tableland, The Cradle Basin."
   },
   {
     "number": 234,
@@ -8475,7 +9408,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#c9922a",
     "biome_category": "High Plateau",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "The Cradle Basin",
+    "region": "The High Tableland",
+    "population_region_text": "The Tribe of Silhouette numbers roughly 300 people, settled in The High Tableland, The Cradle Basin."
   },
   {
     "number": 235,
@@ -8510,7 +9447,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#7bc47f",
     "biome_category": "High Plateau",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 280,
+    "continent": "The Cradle Basin",
+    "region": "The High Tableland",
+    "population_region_text": "The Tribe of Longwalk numbers roughly 280 people, settled in The High Tableland, The Cradle Basin."
   },
   {
     "number": 236,
@@ -8545,7 +9486,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#e05c8a",
     "biome_category": "High Plateau",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 320,
+    "continent": "The Cradle Basin",
+    "region": "The High Tableland",
+    "population_region_text": "The Tribe of Elevrise numbers roughly 320 people, settled in The High Tableland, The Cradle Basin."
   },
   {
     "number": 237,
@@ -8580,7 +9525,11 @@ const TRIBES = [
     "woman_height": "5'6\"-6'0\"",
     "glow_color": "#9b7edc",
     "biome_category": "High Plateau",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 320,
+    "continent": "The Cradle Basin",
+    "region": "The High Tableland",
+    "population_region_text": "The Tribe of Wideholler numbers roughly 320 people, settled in The High Tableland, The Cradle Basin."
   },
   {
     "number": 238,
@@ -8615,7 +9564,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#e8823a",
     "biome_category": "Alpine Tundra",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 200,
+    "continent": "The Frostcrown",
+    "region": "The High Barrens",
+    "population_region_text": "The Tribe of Permafrost numbers roughly 200 people, settled in The High Barrens, The Frostcrown."
   },
   {
     "number": 239,
@@ -8650,7 +9603,11 @@ const TRIBES = [
     "woman_height": "4'11\"-5'3\"",
     "glow_color": "#e097c4",
     "biome_category": "Alpine Tundra",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "The Frostcrown",
+    "region": "The High Barrens",
+    "population_region_text": "The Tribe of Lichenmoss numbers roughly 180 people, settled in The High Barrens, The Frostcrown."
   },
   {
     "number": 240,
@@ -8685,7 +9642,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Alpine Tundra",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 240,
+    "continent": "The Frostcrown",
+    "region": "The High Barrens",
+    "population_region_text": "The Tribe of Windthrive numbers roughly 240 people, settled in The High Barrens, The Frostcrown."
   },
   {
     "number": 241,
@@ -8720,7 +9681,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Alpine Tundra",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "The Frostcrown",
+    "region": "The High Barrens",
+    "population_region_text": "The Tribe of Thawmark numbers roughly 180 people, settled in The High Barrens, The Frostcrown."
   },
   {
     "number": 242,
@@ -8755,7 +9720,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#e8b23a",
     "biome_category": "Alpine Tundra",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 260,
+    "continent": "The Frostcrown",
+    "region": "The High Barrens",
+    "population_region_text": "The Tribe of Sunhardy numbers roughly 260 people, settled in The High Barrens, The Frostcrown."
   },
   {
     "number": 243,
@@ -8790,7 +9759,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#c2593b",
     "biome_category": "Alpine Tundra",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "The Frostcrown",
+    "region": "The High Barrens",
+    "population_region_text": "The Tribe of Breathfog numbers roughly 180 people, settled in The High Barrens, The Frostcrown."
   },
   {
     "number": 244,
@@ -8825,7 +9798,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#9ac9e0",
     "biome_category": "Taiga",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "The Frostcrown",
+    "region": "The Deep Taiga",
+    "population_region_text": "The Tribe of Furtrail numbers roughly 220 people, settled in The Deep Taiga, The Frostcrown."
   },
   {
     "number": 245,
@@ -8860,7 +9837,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#d97757",
     "biome_category": "Taiga",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 220,
+    "continent": "The Frostcrown",
+    "region": "The Deep Taiga",
+    "population_region_text": "The Tribe of Pitchresin numbers roughly 220 people, settled in The Deep Taiga, The Frostcrown."
   },
   {
     "number": 246,
@@ -8895,7 +9876,11 @@ const TRIBES = [
     "woman_height": "5'7\"-6'0\"",
     "glow_color": "#6fa8dc",
     "biome_category": "Taiga",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 200,
+    "continent": "The Frostcrown",
+    "region": "The Deep Taiga",
+    "population_region_text": "The Tribe of Whitewander numbers roughly 200 people, settled in The Deep Taiga, The Frostcrown."
   },
   {
     "number": 247,
@@ -8930,7 +9915,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#f0c419",
     "biome_category": "Taiga",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 220,
+    "continent": "The Frostcrown",
+    "region": "The Deep Taiga",
+    "population_region_text": "The Tribe of Barkscent numbers roughly 220 people, settled in The Deep Taiga, The Frostcrown."
   },
   {
     "number": 248,
@@ -8965,7 +9954,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#c9922a",
     "biome_category": "Taiga",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 240,
+    "continent": "The Frostcrown",
+    "region": "The Deep Taiga",
+    "population_region_text": "The Tribe of Fireflint numbers roughly 240 people, settled in The Deep Taiga, The Frostcrown."
   },
   {
     "number": 249,
@@ -9000,7 +9993,11 @@ const TRIBES = [
     "woman_height": "5'2\"-5'6\"",
     "glow_color": "#7bc47f",
     "biome_category": "Taiga",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 180,
+    "continent": "The Frostcrown",
+    "region": "The Deep Taiga",
+    "population_region_text": "The Tribe of Denwatch numbers roughly 180 people, settled in The Deep Taiga, The Frostcrown."
   },
   {
     "number": 250,
@@ -9035,7 +10032,11 @@ const TRIBES = [
     "woman_height": "5'3\"-5'7\"",
     "glow_color": "#e05c8a",
     "biome_category": "Steppe",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 260,
+    "continent": "The Frostcrown",
+    "region": "The Long Steppe",
+    "population_region_text": "The Tribe of Swiftrider numbers roughly 260 people, settled in The Long Steppe, The Frostcrown."
   },
   {
     "number": 251,
@@ -9070,7 +10071,11 @@ const TRIBES = [
     "woman_height": "5'4\"-5'8\"",
     "glow_color": "#9b7edc",
     "biome_category": "Steppe",
-    "body_category": "Muscular"
+    "body_category": "Muscular",
+    "population": 320,
+    "continent": "The Frostcrown",
+    "region": "The Long Steppe",
+    "population_region_text": "The Tribe of Extremetide numbers roughly 320 people, settled in The Long Steppe, The Frostcrown."
   },
   {
     "number": 252,
@@ -9105,7 +10110,11 @@ const TRIBES = [
     "woman_height": "5'0\"-5'4\"",
     "glow_color": "#e8823a",
     "biome_category": "Steppe",
-    "body_category": "Curvy"
+    "body_category": "Curvy",
+    "population": 280,
+    "continent": "The Frostcrown",
+    "region": "The Long Steppe",
+    "population_region_text": "The Tribe of Fermentcraft numbers roughly 280 people, settled in The Long Steppe, The Frostcrown."
   },
   {
     "number": 253,
@@ -9140,7 +10149,11 @@ const TRIBES = [
     "woman_height": "5'5\"-5'9\"",
     "glow_color": "#e097c4",
     "biome_category": "Steppe",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 280,
+    "continent": "The Frostcrown",
+    "region": "The Long Steppe",
+    "population_region_text": "The Tribe of Spinsteady numbers roughly 280 people, settled in The Long Steppe, The Frostcrown."
   },
   {
     "number": 254,
@@ -9175,7 +10188,11 @@ const TRIBES = [
     "woman_height": "5'1\"-5'4\"",
     "glow_color": "#4fb8c9",
     "biome_category": "Steppe",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "The Frostcrown",
+    "region": "The Long Steppe",
+    "population_region_text": "The Tribe of Sureground numbers roughly 300 people, settled in The Long Steppe, The Frostcrown."
   },
   {
     "number": 255,
@@ -9210,7 +10227,11 @@ const TRIBES = [
     "woman_height": "5'6\"-6'0\"",
     "glow_color": "#8a8f9c",
     "biome_category": "Steppe",
-    "body_category": "Slim"
+    "body_category": "Slim",
+    "population": 300,
+    "continent": "The Frostcrown",
+    "region": "The Long Steppe",
+    "population_region_text": "The Tribe of Gaitread numbers roughly 300 people, settled in The Long Steppe, The Frostcrown."
   }
 ];
 const PARTONE = [
@@ -9302,6 +10323,7 @@ function mdToHtml(md){
 const biomes = [...new Set(TRIBES.map(t => t.biome_category))].sort();
 const penisTiers = ['Small','Average','Large','Immense'];
 const bodyTypes = [...new Set(TRIBES.map(t => t.body_category))].sort();
+const continents = [...new Set(TRIBES.map(t => t.continent))].sort();
 
 const biomeFilter = document.getElementById('biomeFilter');
 biomes.forEach(b => { const o = document.createElement('option'); o.value=b; o.textContent=b; biomeFilter.appendChild(o); });
@@ -9309,6 +10331,8 @@ const penisFilter = document.getElementById('penisFilter');
 penisTiers.forEach(p => { const o = document.createElement('option'); o.value=p; o.textContent=p; penisFilter.appendChild(o); });
 const bodyFilter = document.getElementById('bodyFilter');
 bodyTypes.forEach(b => { const o = document.createElement('option'); o.value=b; o.textContent=b; bodyFilter.appendChild(o); });
+const continentFilter = document.getElementById('continentFilter');
+continents.forEach(c => { const o = document.createElement('option'); o.value=c; o.textContent = c === 'ISLAND_SYSTEMS' ? 'Island Systems' : c; continentFilter.appendChild(o); });
 
 document.getElementById('tribeCountLabel').textContent = `${TRIBES.length} tribes catalogued`;
 
@@ -9333,9 +10357,11 @@ TRIBES.forEach(t => {
   card.dataset.biome = t.biome_category;
   card.dataset.penis = t.penis_tier;
   card.dataset.body = t.body_category;
+  card.dataset.continent = t.continent;
   card.dataset.search = [
     t.name, t.biome, t.cultural_marker, t.courtship_signal, t.local_words,
-    t.standout_fauna_flora, t.names_of_the_culture, t.village_homes
+    t.standout_fauna_flora, t.names_of_the_culture, t.village_homes,
+    t.continent, t.region, t.population_region_text
   ].join(' ').toLowerCase();
 
   card.innerHTML = `
@@ -9355,6 +10381,7 @@ TRIBES.forEach(t => {
       </div>
 
       <div class="tab-panel active" data-panel="stats">
+        <h4>Population &amp; Homeland</h4><p>${inlineMd(t.population_region_text)}</p>
         <h4>Birth Medium</h4><p>${inlineMd(t.birth_medium)}</p>
         <h4>The Futa</h4><p>${inlineMd(t.the_futa)}</p>
         <h4>The Woman</h4><p>${inlineMd(t.the_woman)}</p>
@@ -9432,13 +10459,15 @@ function applyFilters(){
   const biome = biomeFilter.value;
   const penis = penisFilter.value;
   const body = bodyFilter.value;
+  const continent = continentFilter.value;
   let visible = 0;
   allCards().forEach(card => {
     const matchesSearch = !q || card.dataset.search.includes(q) || card.dataset.name.includes(q);
     const matchesBiome = !biome || card.dataset.biome === biome;
     const matchesPenis = !penis || card.dataset.penis === penis;
     const matchesBody = !body || card.dataset.body === body;
-    const show = matchesSearch && matchesBiome && matchesPenis && matchesBody;
+    const matchesContinent = !continent || card.dataset.continent === continent;
+    const show = matchesSearch && matchesBiome && matchesPenis && matchesBody && matchesContinent;
     card.classList.toggle('hidden', !show);
     if(show) visible++;
   });
@@ -9450,8 +10479,9 @@ searchInput.addEventListener('input', applyFilters);
 biomeFilter.addEventListener('change', applyFilters);
 penisFilter.addEventListener('change', applyFilters);
 bodyFilter.addEventListener('change', applyFilters);
+continentFilter.addEventListener('change', applyFilters);
 document.getElementById('clearBtn').addEventListener('click', () => {
-  searchInput.value=''; biomeFilter.value=''; penisFilter.value=''; bodyFilter.value='';
+  searchInput.value=''; biomeFilter.value=''; penisFilter.value=''; bodyFilter.value=''; continentFilter.value='';
   applyFilters();
 });
 
