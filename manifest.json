@@ -1,9 +1,25 @@
 {
-  "name": "The Wheel",
-  "short_name": "The Wheel",
-  "start_url": "/the-wheel/",
+  "name": "Naritonine \u00b7 ALRPG",
+  "short_name": "Check-In",
+  "description": "The Naritonine Codex",
+  "start_url": "/Naritonine/",
+  "scope": "/Naritonine/",
   "display": "standalone",
-  "background_color": "#05050e",
-  "theme_color": "#05050e",
-  "icons": []
+  "background_color": "#07090F",
+  "theme_color": "#0A0E1A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/Naritonine/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Naritonine/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
